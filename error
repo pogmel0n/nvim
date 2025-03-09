@@ -1,0 +1,64 @@
+Done in 30.2s using pnpm v10.5.2
+  -> prepare surfer build environment
+
+> zen-core@1.0.0 surfer /home/fangqi/.cache/yay/zen-browser/src/desktop
+> surfer ci --brand release --display-version 1.9b
+
+00:00:00 Set the build to release
+00:00:00 Setting the brand to be 'release'
+00:00:00 Loaded version: 1.9b → 1.9b
+'/home/fangqi/.cache/yay/zen-browser/src/firefox-136.0.source.tar.xz' -> './.surfer/engine/firefox-136.0.source.tar.xz'
+
+> zen-core@1.0.0 surfer /home/fangqi/.cache/yay/zen-browser/src/desktop
+> surfer download
+
+00:00:02 Locating Firefox release 136.0...
+00:00:02 Using cached download
+00:00:02 Unpacking Firefox...
+00:00:02 Unpacking /home/fangqi/.cache/yay/zen-browser/src/desktop/.surfer/engine/firefox-136.0.source.tar.xz to /home/fangqi/.cache/yay/zen-browser/src/desktop/engine
+00:02:46 Unpacked Firefox source to /home/fangqi/.cache/yay/zen-browser/src/desktop/engine
+00:02:46 Init firefox
+00:02:46 Initializing git, this may take some time
+00:02:48 hint: Using 'master' as the name for the initial branch. This default branch name
+00:02:48 hint: is subject to change. To configure the initial branch name to use in all
+00:02:48 hint: of your new repositories, which will suppress this warning, call:
+00:02:48 hint:
+00:02:48 hint: 	git config --global init.defaultBranch <name>
+00:02:48 hint:
+00:02:48 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+00:02:48 hint: 'development'. The just-created branch can be renamed via this command:
+00:02:48 hint:
+00:02:48 hint: 	git branch -m <name>
+00:02:48 Initialized empty Git repository in /home/fangqi/.cache/yay/zen-browser/src/desktop/engine/.git/
+00:02:48 Reinitialized existing Git repository in /home/fangqi/.cache/yay/zen-browser/src/desktop/engine/.git/
+00:02:48 Switched to a new branch '136.0'
+00:19:50 Committing...
+00:24:25 Author identity unknown
+00:24:25 *** Please tell me who you are.
+00:24:25 Run
+00:24:25   git config --global user.email "you@example.com"
+00:24:25   git config --global user.name "Your Name"
+00:24:25 to set your account's default identity.
+00:24:25 Omit --global to set the identity only in this repository.
+00:24:25 fatal: unable to auto-detect email address (got 'fangqi@acer-potato.(none)')
+00:24:25 Switched to a new branch 'zen_browser'
+00:24:26 Adding addons to mozbuild...
+00:24:26 Discarding /home/fangqi/.cache/yay/zen-browser/src/desktop/engine/browser/extensions/moz.build...
+
+
+SUCCESS You should be ready to make changes to Zen Browser.
+	
+	Remember to change the repository in configs/common/mozconfig to your own.
+	You should import the patches next, run |surfer import|.
+	To begin building Zen Browser, run |surfer build|.
+
+
+> zen-core@1.0.0 surfer /home/fangqi/.cache/yay/zen-browser/src/desktop
+> surfer import
+
+/home/fangqi/.cache/yay/zen-browser/PKGBUILD: line 122: 12432 Illegal instruction     (core dumped) env SURFER_COMPAT="$CARCH" pnpm surfer import
+==> ERROR: A failure occurred in prepare().
+    Aborting...
+ -> error making: zen-browser-exit status 4
+ -> Failed to install the following packages. Manual intervention is required:
+zen-browser - exit status 4
